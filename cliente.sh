@@ -9,7 +9,7 @@ do
     tcpdump_pid=$!
     ffplay -autoexit rtsp://10.0.4.10:8554/mystream 
 
-    # Espera 61 segundos
+    # Espera 3 segundos
     sleep 3
 
     # Mata o processo tcpdump
