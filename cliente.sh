@@ -1,3 +1,5 @@
+#!/bin/bash
+
 for i in {1..30}
 do
     echo "Execution $i"
@@ -13,5 +15,9 @@ do
     # Mata o processo tcpdump
     sudo kill $tcpdump_pid
 
+    # Certifica-se de que todos os processos tcpdump estão mortos
+    sudo pkill -f tcpdump
+
     echo "Execution $i completed"
 done
+
